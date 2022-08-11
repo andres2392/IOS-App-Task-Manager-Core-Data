@@ -16,6 +16,10 @@
 		7E18223A28A448DD00E66F26 /* TaskManagerCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E18223928A448DD00E66F26 /* TaskManagerCoreDataTests.swift */; };
 		7E18224428A448DD00E66F26 /* TaskManagerCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E18224328A448DD00E66F26 /* TaskManagerCoreDataUITests.swift */; };
 		7E18224628A448DD00E66F26 /* TaskManagerCoreDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E18224528A448DD00E66F26 /* TaskManagerCoreDataUITestsLaunchTests.swift */; };
+		7E18225528A44B0400E66F26 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E18225428A44B0400E66F26 /* HomeView.swift */; };
+		7E18225728A44B1000E66F26 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E18225628A44B1000E66F26 /* TaskViewModel.swift */; };
+		7E18225928A44D0000E66F26 /* DynamicFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E18225828A44D0000E66F26 /* DynamicFilteredView.swift */; };
+		7E18225B28A4520F00E66F26 /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E18225A28A4520F00E66F26 /* NewTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		7E18223F28A448DD00E66F26 /* TaskManagerCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskManagerCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E18224328A448DD00E66F26 /* TaskManagerCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerCoreDataUITests.swift; sourceTree = "<group>"; };
 		7E18224528A448DD00E66F26 /* TaskManagerCoreDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerCoreDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7E18225428A44B0400E66F26 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7E18225628A44B1000E66F26 /* TaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		7E18225828A44D0000E66F26 /* DynamicFilteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteredView.swift; sourceTree = "<group>"; };
+		7E18225A28A4520F00E66F26 /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,8 @@
 		7E18222228A448DC00E66F26 /* TaskManagerCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				7E18225328A44ADB00E66F26 /* ViewModel */,
+				7E18225228A44AD500E66F26 /* View */,
 				7E18222328A448DC00E66F26 /* TaskManagerCoreDataApp.swift */,
 				7E18222528A448DC00E66F26 /* ContentView.swift */,
 				7E18222728A448DD00E66F26 /* Assets.xcassets */,
@@ -131,6 +141,24 @@
 				7E18224528A448DD00E66F26 /* TaskManagerCoreDataUITestsLaunchTests.swift */,
 			);
 			path = TaskManagerCoreDataUITests;
+			sourceTree = "<group>";
+		};
+		7E18225228A44AD500E66F26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E18225428A44B0400E66F26 /* HomeView.swift */,
+				7E18225828A44D0000E66F26 /* DynamicFilteredView.swift */,
+				7E18225A28A4520F00E66F26 /* NewTaskView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E18225328A44ADB00E66F26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7E18225628A44B1000E66F26 /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +292,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E18222D28A448DD00E66F26 /* Persistence.swift in Sources */,
+				7E18225928A44D0000E66F26 /* DynamicFilteredView.swift in Sources */,
+				7E18225728A44B1000E66F26 /* TaskViewModel.swift in Sources */,
 				7E18222628A448DC00E66F26 /* ContentView.swift in Sources */,
+				7E18225B28A4520F00E66F26 /* NewTaskView.swift in Sources */,
 				7E18223028A448DD00E66F26 /* TaskManagerCoreData.xcdatamodeld in Sources */,
+				7E18225528A44B0400E66F26 /* HomeView.swift in Sources */,
 				7E18222428A448DC00E66F26 /* TaskManagerCoreDataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
